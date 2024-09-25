@@ -96,6 +96,7 @@
     .navbar .links a {
       font-size: 1rem;
     }
+
     /* Toggle button styling */
     .navbar .toggle_btn {
       color: #fff;
@@ -154,7 +155,10 @@
       .dropdown_menu {
         display: block;
       }
-      .text-words,h1,p{
+
+      .text-words,
+      h1,
+      p {
         display: none;
       }
     }
@@ -231,11 +235,13 @@
       margin-left: 15px;
 
     }
-   @media (max-width: 500px) {
-    .container{
-      backdrop-filter: blur(60px);
+
+    @media (max-width: 500px) {
+      .container {
+        backdrop-filter: blur(60px);
+      }
     }
-   }
+
     .container .forms {
       display: flex;
       align-items: center;
@@ -400,6 +406,7 @@
     ::placeholder {
       color: #ffff;
     }
+
     .text-words {
       display: inline-block;
       color: white;
@@ -416,14 +423,18 @@
       display: none;
       margin-top: 210px;
       margin-left: 50%;
-      width: 444px;  /* Adjust size */
+      width: 444px;
+      /* Adjust size */
       height: 198px;
       background: url('images/MainLogo2.png');
       background-size: cover;
       background-position: center;
-      opacity: 0;  /* Initially hidden */
-      transform: translateY(20px); /* Initial position - float from bottom */
-      transition: transform 0.5s ease-out, opacity 0.5s ease-out; /* Same animation as text */
+      opacity: 0;
+      /* Initially hidden */
+      transform: translateY(20px);
+      /* Initial position - float from bottom */
+      transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+      /* Same animation as text */
     }
 
     h1 {
@@ -433,19 +444,22 @@
       flex-wrap: wrap;
     }
 
-    h1 span, p span {
+    h1 span,
+    p span {
       display: inline-block;
       opacity: 0;
       transform: translateY(20px);
       transition: transform 0.5s ease-out, opacity 0.5s ease-out;
     }
 
-    h1 span.show, p span.show {
+    h1 span.show,
+    p span.show {
       opacity: 1;
       transform: translateY(0);
     }
 
-    h1 span.hide, p span.hide {
+    h1 span.hide,
+    p span.hide {
       opacity: 0;
       transform: translateY(20px);
     }
@@ -460,22 +474,26 @@
 
     .text-words.p.show {
       opacity: 1;
-      transform: translateY(0);  /* Float into view */
+      transform: translateY(0);
+      /* Float into view */
     }
-    #sign{
-    color: black;
-  }
-  #sign:hover{
-    color: #FFF;
-  }
-  /* Hide text and image animations on smaller screens */
-@media only screen and (max-width: 600px) {
-    .animated-text, .animated-image {
+
+    #sign {
+      color: black;
+    }
+
+    #sign:hover {
+      color: #FFF;
+    }
+
+    /* Hide text and image animations on smaller screens */
+    @media only screen and (max-width: 600px) {
+
+      .animated-text,
+      .animated-image {
         display: none;
+      }
     }
-}
-
-
   </style>
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
   <link rel="shortcut icon" href="images/try.jpg" type="image/x-icon">
@@ -518,21 +536,22 @@
   </header>
   <div class="container">
     <div class="forms">
-      
+
       <div class="form login">
         <span class="title" style="color: #fff;; font-size: 35px;">Login</span>
 
         <form onsubmit="return validateLoginForm()" id="logForm">
-    
+
           <div class="input-field">
-            <input type="email" name="email" placeholder="Enter your email" style="color: #FFF;"  id="emailLogin">
+            <input type="email" name="email" placeholder="Enter your email" style="color: #FFF;" id="emailLogin">
             <i class="uil uil-envelope icon" style="color: #fff;"></i>
           </div>
           <br>
           <div class="input-field">
 
             <!-- the password for login is fixed 12345678  you can change it i couldnt think of a better authentication method -->
-            <input type="password" class="password" name="email" style="color: #FFF; " placeholder="Enter your password" id="passwordLogin">
+            <input type="password" class="password" name="email" style="color: #FFF; " placeholder="Enter your password"
+              id="passwordLogin">
             <i class="uil uil-lock icon"></i>
             <i class="uil uil-eye-slash showHidePw"></i>
           </div>
@@ -554,18 +573,18 @@
         </form>
 
         <div class="login-signup">
-          <span class="text" style=" font-size: 15px;" >Not a member?
+          <span class="text" style=" font-size: 15px;">Not a member?
             <a href="#" class="text signup-link" style="font-size: 15px;">Signup Now</a>
           </span>
         </div>
       </div>
-   
+
       <!-- Registration Form -->
 
       <div class="form signup">
         <span class="title" style="color:#EFEFEF; font-size:35px">Registration</span>
 
-        <form  onsubmit="return validateForm()" id="regForm">
+        <form onsubmit="return validateForm()" id="regForm">
 
           <div class="input-field">
             <input type="text" placeholder="Enter your name" name="name" id="name" style="color: #FFF;">
@@ -577,11 +596,13 @@
             <i class="uil uil-envelope icon"></i>
           </div>
           <div class="input-field">
-            <input type="password" class="password" placeholder="Create a password" style="color: white;" id="passwordReg">
+            <input type="password" class="password" placeholder="Create a password" style="color: white;"
+              id="passwordReg">
             <i class="uil uil-lock icon"></i>
           </div>
           <div class="input-field">
-            <input type="password" class="password" placeholder="Confirm a password" style="color: #FFF;"  id="passwordCon">
+            <input type="password" class="password" placeholder="Confirm a password" style="color: #FFF;"
+              id="passwordCon">
             <i class="uil uil-lock icon"></i>
             <i class="uil uil-eye-slash showHidePw"></i>
           </div>
@@ -594,7 +615,7 @@
           </div>
 
           <div class="input-field button">
-            
+
             <a href="lms.html"> <input type="submit" value="Signup" style="margin-top: 10px;"> </a>
 
           </div>
@@ -610,10 +631,10 @@
 
     </div>
   </div>
-</form>
+  </form>
   <div class="text-words" id="textWords">
     <h1 id="animated-heading">Welcome</h1>
-    <p id="animated-paragraph">to...</p>                                                                                          
+    <p id="animated-paragraph">to...</p>
   </div>
   <div class="text-words p" id="image-container"></div>
 
@@ -621,92 +642,92 @@
 </body>
 <script src="main.js">
 
- 
-
-// JS code to switch between signup and login form
-signUp.addEventListener("click", () => {
-  container.classList.add("active");
-});
-login.addEventListener("click", () => {
-  container.classList.remove("active");
-});
 
 
-// Text animation logic
-document.addEventListener("DOMContentLoaded", () => {
-  const heading = document.getElementById("animated-heading");
-  const text = heading.textContent;
-  const paragraph = document.getElementById("animated-paragraph");
-  const pText = paragraph.textContent;
-  const imageContainer = document.getElementById('image-container');
-
-  heading.textContent = '';  // Clear initial text in h1
-  paragraph.textContent = ''; // Clear initial text in p
-
-  // Animate h1 letters (float in)
-  text.split('').forEach((char, index) => {
-    const span = document.createElement('span');
-    span.textContent = char;
-    heading.appendChild(span);
-
-    setTimeout(() => {
-      span.classList.add('show');
-    }, index * 400); // Adjust the delay for h1 animation speed
+  // JS code to switch between signup and login form
+  signUp.addEventListener("click", () => {
+    container.classList.add("active");
+  });
+  login.addEventListener("click", () => {
+    container.classList.remove("active");
   });
 
-  // After h1 animation, animate the p tag (float in)
-  const h1AnimationTime = text.length * 400; // Total time for h1 animation
-  setTimeout(() => {
-    pText.split('').forEach((char, index) => {
+
+  // Text animation logic
+  document.addEventListener("DOMContentLoaded", () => {
+    const heading = document.getElementById("animated-heading");
+    const text = heading.textContent;
+    const paragraph = document.getElementById("animated-paragraph");
+    const pText = paragraph.textContent;
+    const imageContainer = document.getElementById('image-container');
+
+    heading.textContent = '';  // Clear initial text in h1
+    paragraph.textContent = ''; // Clear initial text in p
+
+    // Animate h1 letters (float in)
+    text.split('').forEach((char, index) => {
       const span = document.createElement('span');
       span.textContent = char;
-      paragraph.appendChild(span);
+      heading.appendChild(span);
 
       setTimeout(() => {
         span.classList.add('show');
-      }, index * 500); // Adjust the delay for p animation speed
-    });
-  }, h1AnimationTime);
-
-  // Animate text out and show the image
-  const totalTextAnimationTime = h1AnimationTime + pText.length * 500;
-
-  setTimeout(() => {
-    // Hide h1 letters
-    heading.querySelectorAll('span').forEach((span, index) => {
-      setTimeout(() => {
-        span.classList.remove('show');
-        span.classList.add('hide');
-      }, index * 150); // Delay for hiding
+      }, index * 400); // Adjust the delay for h1 animation speed
     });
 
-    // Hide p letters
-    paragraph.querySelectorAll('span').forEach((span, index) => {
-      setTimeout(() => {
-        span.classList.remove('show');
-        span.classList.add('hide');
-      }, index * 150); // Delay for hiding
-    });
-
-    // After hiding text, display the image with the same float-in animation
+    // After h1 animation, animate the p tag (float in)
+    const h1AnimationTime = text.length * 400; // Total time for h1 animation
     setTimeout(() => {
-      imageContainer.style.display = 'block'; // Show the image container
+      pText.split('').forEach((char, index) => {
+        const span = document.createElement('span');
+        span.textContent = char;
+        paragraph.appendChild(span);
 
+        setTimeout(() => {
+          span.classList.add('show');
+        }, index * 500); // Adjust the delay for p animation speed
+      });
+    }, h1AnimationTime);
+
+    // Animate text out and show the image
+    const totalTextAnimationTime = h1AnimationTime + pText.length * 500;
+
+    setTimeout(() => {
+      // Hide h1 letters
+      heading.querySelectorAll('span').forEach((span, index) => {
+        setTimeout(() => {
+          span.classList.remove('show');
+          span.classList.add('hide');
+        }, index * 150); // Delay for hiding
+      });
+
+      // Hide p letters
+      paragraph.querySelectorAll('span').forEach((span, index) => {
+        setTimeout(() => {
+          span.classList.remove('show');
+          span.classList.add('hide');
+        }, index * 150); // Delay for hiding
+      });
+
+      // After hiding text, display the image with the same float-in animation
       setTimeout(() => {
-        imageContainer.style.opacity = 1; // Add animation effect for opacity
-        imageContainer.style.transform = 'translateY(0)'; // Float in the image
-      }, 300); // Slight delay before image floats in
-    }, pText.length * 300); // Delay based on how long it takes for the paragraph to fade out
-  }, totalTextAnimationTime + 1000); // Start fade-out after a delay
-});
+        imageContainer.style.display = 'block'; // Show the image container
+
+        setTimeout(() => {
+          imageContainer.style.opacity = 1; // Add animation effect for opacity
+          imageContainer.style.transform = 'translateY(0)'; // Float in the image
+        }, 300); // Slight delay before image floats in
+      }, pText.length * 300); // Delay based on how long it takes for the paragraph to fade out
+    }, totalTextAnimationTime + 1000); // Start fade-out after a delay
+  });
 
 
-    
 
 
 
 
-    
+
+
 </script>
 
 </html>
