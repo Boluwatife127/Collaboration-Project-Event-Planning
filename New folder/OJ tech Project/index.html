@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="images/try.jpg" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="navigation">
+            <!--navbar start-->
+            <div class="navbar" id="navbar">
+                <!--Logo start-->
+                <div class="logo">OJ Tech</div>
+                <!--Logo end-->
+                <!--Links start-->
+                <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index2.html">Menu</a></li>
+                <li><a href="#">Reservations</a></li>
+                <li><a href="index9.html">About Us</a></li>
+                <li><a href="index10.html" id="button">Sign Up</a></li>
+                </ul>
+               <!--Links end-->
+               <!--Toggle btn start-->
+                <div class="toggle_btn">
+                   <i><img src="menu.png" style="height: 30px; width: 40px;"/></i> 
+                </div>
+                <!--Toggle btn end-->
+            </div>
+            <!--navbar end-->
+          </div>
+         <br>
+         <!--dropdown menu start-->
+            <div class="dropdown_menu">
+                 <li><a href="#Home-section">Home</a></li>
+                <li><a href="#Menu-section">Menu</a></li>
+                <li><a href="#Reservations-section">Reservations</a></li>
+                <li><a href="#">Orders</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Reviews</a></li>
+            </div>
+            <!--dropdown menu end-->
+    </header>
+    <div class="card">
+       <center><img src="images/person.png" alt="Person" style="height: 200px;"></center> 
+        <input type="email" name="" id="" placeholder="Enter Your email">
+        <br>
+        <input type="password" name="" id="" placeholder="Password">
+        <div class="button"></div>
+
+    </div>
+</body>
+<script src="https://kit.fontawesome.com/cce268d8f6.js" crossorigin="anonymous"></script>
+<script>
+    //JS for dropdown menu
+const toggleBtn = document.querySelector('.toggle_btn');
+const toggleBtnIcon = document.querySelector('.toggle_btn i');
+const dropDownMenu = document.querySelector('.dropdown_menu');
+
+  toggleBtn.onclick = function () {
+  dropDownMenu.classList.toggle('open');
+  const isOpen = dropDownMenu.classList.contains('open');
+
+    toggleBtnIcon.classList = isOpen ? 'open' : '';
+  };
+</script>
+</html>
